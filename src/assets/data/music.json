@@ -1,0 +1,92 @@
+[
+    {
+      "id": "1",
+      "name": "Deewani Mastani",
+      "actors": "Deepika Padukone",
+      "artist": "Shreya Ghoshal",
+      "releasedon": "2013",
+      "songs_url": "assets/data/01-Deewani Mastani.mp3",
+      "songs_duration": "5:40"
+  },
+  {
+      "id": "2",
+      "name": "Phir Mohabbat",
+      "actors": "Imran Hashmi",
+      "artist": "Arjit Singh",
+      "releasedon": "2011",
+      "songs_url": "assets/data/02-Phir Mohabbat.mp3",
+      "songs_duration": "5:31"
+  },
+  {
+      "id": "3",
+      "name": "Do Dhaari Talwaar",
+      "actors": "Imran Khan",
+      "artist": "Shahid Malya",
+      "releasedon": "2011",
+      "songs_url": "assets/data/03-Do Dhaari Talwaar.mp3",
+      "songs_duration": "5:00"
+  },
+  {
+      "id": "4",
+      "name": "Binte Dil",
+      "actors": "Ranveer Singh",
+      "artist": "Arjit Singh",
+      "releasedon": "2013",
+      "songs_url": "assets/data/04-Binte Dil .mp3",
+      "songs_duration": "3:12"
+  },
+  {
+      "id": "5",
+      "name": "Aaj Zid",
+      "actors": "Gautam Rode",
+      "artist": "Arjit Singh",
+      "releasedon": "2017",
+      "songs_url": "assets/data/05-Aaj Zid.mp3",
+      "songs_duration": "4:11"
+  },
+  {
+      "id": "6",
+      "name": "dostana",
+      "actors": "Jhon Abraham",
+      "artist": "Vishal Dadlani",
+      "releasedon": "2008",
+      "songs_url": "assets/data/06-dostana.mp3",
+      "songs_duration": "4:37"
+  },
+  {
+      "id": "7",
+      "name": "Falak-Tak",
+      "actors": "Akshay Kumar",
+      "artist": "Udit Narayan",
+      "releasedon": "2008",
+      "songs_url": "assets/data/07-Falak-Tak.mp3",
+      "songs_duration": "5:55"
+  },
+  {
+      "id": "8",
+      "name": "Maahi",
+      "actors": "Imran Hashmi",
+      "artist": "Toshi Shabri",
+      "releasedon": "2008",
+      "songs_url": "assets/data/08-Maahi .mp3",
+      "songs_duration": "5:29"
+  },
+  {
+      "id": "9",
+      "name": "Milne Hai Mujhse Aayi",
+      "actors": "Aditya Roy Kapoor",
+      "artist": "Arjit Singh",
+      "releasedon": "2013",
+      "songs_url": "assets/data/09-Milne Hai Mujhse Aayi.mp3",
+      "songs_duration": "4:55"
+  },
+  {
+      "id": "10",
+      "name": "Tumse Hi Tumse",
+      "actors": "Ranveer Kapoor",
+      "artist": "Shekhar Ravjiani",
+      "releasedon": "2010",
+      "songs_url": "assets/data/10-Tumse Hi Tumse.mp3",
+      "songs_duration": "4:23"
+  }
+]
