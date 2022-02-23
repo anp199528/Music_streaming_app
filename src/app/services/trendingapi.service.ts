@@ -6,11 +6,10 @@ import { songData } from '../shared/datasets';
 @Injectable({
   providedIn: 'root'
 })
-export class MusicapiService {
+export class TrendingapiService {
   constructor(private http:HttpClient) { }
   apiCall():Observable<songData[]>
   {    
-    return this.http.get<songData[]>("assets/data/music.json");
+    return this.http.get<songData[]>("assets/data/trending.json");
   }
-
 }

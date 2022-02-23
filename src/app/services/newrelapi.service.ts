@@ -6,11 +6,10 @@ import { songData } from '../shared/datasets';
 @Injectable({
   providedIn: 'root'
 })
-export class MusicapiService {
+export class NewrelapiService {
   constructor(private http:HttpClient) { }
   apiCall():Observable<songData[]>
   {    
-    return this.http.get<songData[]>("assets/data/music.json");
+    return this.http.get<songData[]>("assets/data/newReleases.json");
   }
-
 }

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "movie": "Bajirao Mastani",
+        "icon": "assets/images/Bajirao_Mastani.jpg",
+        "name": "Deewani Mastani",
+        "actors": "Deepika Padukone",
+        "artist": "Shreya Ghoshal",
+        "releasedon": "2013",
+        "songs_url": "assets/data/01-Deewani Mastani.mp3",
+        "songs_duration": "5:40"
+    },
+    {
+        "id": "2",
+        "movie": "Murder 2",
+        "icon": "assets/images/Murder_2.jpg",
+        "name": "Phir Mohabbat",
+        "actors": "Imran Hashmi",
+        "artist": "Arjit Singh",
+        "releasedon": "2011",
+        "songs_url": "assets/data/02-Phir Mohabbat.mp3",
+        "songs_duration": "5:31"
+    },
+    {
+        "id": "3",
+        "movie": "Mere Brother Ki Dulhan",
+        "icon": "assets/images/Mere_Brother_Ki_Dulhan.jpg",
+        "name": "Do Dhaari Talwaar",
+        "actors": "Imran Khan",
+        "artist": "Shahid Malya",
+        "releasedon": "2011",
+        "songs_url": "assets/data/03-Do Dhaari Talwaar.mp3",
+        "songs_duration": "5:00"
+    },
+    {
+        "id": "4",
+        "movie": "Padmavaat",
+        "icon": "assets/images/Padmaavat.jpg",
+        "name": "Binte Dil",
+        "actors": "Ranveer Singh",
+        "artist": "Arjit Singh",
+        "releasedon": "2013",
+        "songs_url": "assets/data/04-Binte Dil .mp3",
+        "songs_duration": "3:12"
+    },
+    {
+        "id": "5",
+        "movie": "Aksar 2",
+        "icon": "assets/images/Aksar_2.jpg",
+        "name": "Aaj Zid",
+        "actors": "Gautam Rode",
+        "artist": "Arjit Singh",
+        "releasedon": "2017",
+        "songs_url": "assets/data/05-Aaj Zid.mp3",
+        "songs_duration": "4:11"
+    }
+]

@@ -1,0 +1,15 @@
+<mat-card >
+    <mat-card-title >
+       Trending Songs
+    </mat-card-title>
+    <div class="row justify-content-around" >
+        <div class="column"  *ngFor="let picture of music">
+            <mat-card class="card">
+                <img mat-card-image [src]="picture.icon"(click)="player(picture)">
+            <mat-card-subtitle >
+                <span >{{picture.name}}</span>
+            </mat-card-subtitle>
+           </mat-card>
+    </div>
+    </div>
+ </mat-card>

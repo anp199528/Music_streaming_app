@@ -1,0 +1,57 @@
+[
+    {
+        "id": "6",
+        "movie": "Dostana",
+        "icon": "assets/images/Dostana.jpg",
+        "name": "Jane Kyun",
+        "actors": "Jhon Abraham",
+        "artist": "Vishal Dadlani",
+        "releasedon": "2008",
+        "songs_url": "assets/data/06-dostana.mp3",
+        "songs_duration": "4:37"
+    },
+    {
+        "id": "7",
+        "movie": "Tashan",
+        "icon": "assets/images/Tashan.jpg",
+        "name": "Falak-Tak",
+        "actors": "Akshay Kumar",
+        "artist": "Udit Narayan",
+        "releasedon": "2008",
+        "songs_url": "assets/data/07-Falak-Tak.mp3",
+        "songs_duration": "5:55"
+    },
+    {
+        "id": "8",
+        "movie": "Raaz 2",
+        "icon": "assets/images/Raaz_2.jpg",
+        "name": "Maahi",
+        "actors": "Imran Hashmi",
+        "artist": "Toshi Shabri",
+        "releasedon": "2008",
+        "songs_url": "assets/data/08-Maahi .mp3",
+        "songs_duration": "5:29"
+    },
+    {
+        "id": "9",
+        "movie": "Aashiqui 2",
+        "icon": "assets/images/Aashiqui_2.jpg",
+        "name": "Aashiqui",
+        "actors": "Aditya Roy Kapoor",
+        "artist": "Arjit Singh",
+        "releasedon": "2013",
+        "songs_url": "assets/data/09-Milne Hai Mujhse Aayi.mp3",
+        "songs_duration": "4:55"
+    },
+    {
+        "id": "10",
+        "movie": "Anjaana Anjaani",
+        "icon": "assets/images/Anjaana_Anjaani.jpg",
+        "name": "Tumse Hi Tumse",
+        "actors": "Ranveer Kapoor",
+        "artist": "Shekhar Ravjiani",
+        "releasedon": "2010",
+        "songs_url": "assets/data/10-Tumse Hi Tumse.mp3",
+        "songs_duration": "4:23"
+    }
+]

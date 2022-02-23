@@ -1,6 +1,8 @@
 [
     {
       "id": "1",
+      "movie":"Bajirao Mastani",
+      "icon":"assets/images/Bajirao_Mastani.jpg",
       "name": "Deewani Mastani",
       "actors": "Deepika Padukone",
       "artist": "Shreya Ghoshal",
@@ -10,6 +12,8 @@
   },
   {
       "id": "2",
+      "movie":"Murder 2",
+      "icon":"assets/images/Murder_2.jpg",
       "name": "Phir Mohabbat",
       "actors": "Imran Hashmi",
       "artist": "Arjit Singh",
@@ -19,6 +23,8 @@
   },
   {
       "id": "3",
+      "movie":"Mere Brother Ki Dulhan",
+      "icon":"assets/images/Mere_Brother_Ki_Dulhan.jpg",
       "name": "Do Dhaari Talwaar",
       "actors": "Imran Khan",
       "artist": "Shahid Malya",
@@ -28,6 +34,8 @@
   },
   {
       "id": "4",
+      "movie":"Padmavaat",
+      "icon":"assets/images/Padmaavat.jpg",
       "name": "Binte Dil",
       "actors": "Ranveer Singh",
       "artist": "Arjit Singh",
@@ -37,6 +45,8 @@
   },
   {
       "id": "5",
+      "movie":"Aksar 2",
+      "icon":"assets/images/Aksar_2.jpg",
       "name": "Aaj Zid",
       "actors": "Gautam Rode",
       "artist": "Arjit Singh",
@@ -46,7 +56,9 @@
   },
   {
       "id": "6",
-      "name": "dostana",
+      "movie":"Dostana",
+      "icon":"assets/images/Dostana.jpg",
+      "name": "Jane Kyun",
       "actors": "Jhon Abraham",
       "artist": "Vishal Dadlani",
       "releasedon": "2008",
@@ -55,6 +67,8 @@
   },
   {
       "id": "7",
+      "movie":"Tashan",
+      "icon":"assets/images/Tashan.jpg",
       "name": "Falak-Tak",
       "actors": "Akshay Kumar",
       "artist": "Udit Narayan",
@@ -64,6 +78,8 @@
   },
   {
       "id": "8",
+      "movie":"Raaz 2",
+      "icon":"assets/images/Raaz_2.jpg",
       "name": "Maahi",
       "actors": "Imran Hashmi",
       "artist": "Toshi Shabri",
@@ -73,7 +89,9 @@
   },
   {
       "id": "9",
-      "name": "Milne Hai Mujhse Aayi",
+      "movie":"Aashiqui 2",
+      "icon":"assets/images/Aashiqui_2.jpg",
+      "name": "Aashiqui",
       "actors": "Aditya Roy Kapoor",
       "artist": "Arjit Singh",
       "releasedon": "2013",
@@ -82,6 +100,8 @@
   },
   {
       "id": "10",
+      "movie":"Anjaana Anjaani",
+      "icon":"assets/images/Anjaana_Anjaani.jpg",
       "name": "Tumse Hi Tumse",
       "actors": "Ranveer Kapoor",
       "artist": "Shekhar Ravjiani",
