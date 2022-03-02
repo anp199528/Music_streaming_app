@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from '../layout/main-layout/main-layout.component';
 import { DashboardComponent } from './dashboard.component';
 
-const routes: Routes = [{ path: '', component: MainLayoutComponent, children:[{path:'',component:DashboardComponent}]}];
+const routes: Routes = [{path:'',component:DashboardComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

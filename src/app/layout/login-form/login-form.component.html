@@ -1,0 +1,40 @@
+<div class="modal-header">
+    <h4 class="modal-title">Login</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="card" style="width: 18rem rounded shadow py-3">
+  
+          <div class="card-body">
+              <div class="container">
+                  <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+                      <div>
+                          <div class="form-group">
+                              <label for="Username" class="form-label">Username*</label>
+                              <input type="text" class="form-control" id="Username" placeholder="Enter Username"
+                                  name="username" width="20%" formControlName="username">
+                              <small class="text-danger"
+                                  *ngIf="formControls.username.errors?.required && formControls.username.touched">Please
+                                  enter username</small>
+                          </div>  
+                          <div class="form-group">
+                            <label for="Password" class="form-label">Password*</label>
+                            <input type="text" class="form-control" id="Password" placeholder="Enter Password"
+                                name="password" width="20%" formControlName="password">
+                            <small class="text-danger"
+                                *ngIf="formControls.password.errors?.required && formControls.password.touched">Please
+                                enter password</small>
+                        </div>                          
+                      </div>                    
+                      <button type="submit" class="btn btn-success" [disabled]="myReactiveForm.invalid">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div>

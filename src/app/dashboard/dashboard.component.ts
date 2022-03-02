@@ -5,7 +5,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MusicapiService } from '../services/musicapi.service';
 import { songData } from '../shared/datasets';
-import { PlayerComponent } from './player/player.component';
+import { PlayerComponent } from '../layout/player/player.component';
+import { DataCarrierService } from '../services/data-carrier.service';
 
 @Component({
   selector: 'ngbd-modal-content',
@@ -31,12 +32,12 @@ export class DashboardComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   public playData!: songData;
   public toggle:boolean=true;
- @ViewChild(PlayerComponent) play!: PlayerComponent;
+//  @ViewChild(PlayerComponent) play!: PlayerComponent;
   // public icon!:string;
  
   // public time!: number;
   
-  constructor(public modalService: NgbModal, public musicapi: MusicapiService) { }
+  constructor(public modalService: NgbModal, public musicapi: MusicapiService, public dt:DataCarrierService) { }
   // ngAfterViewInit(): void {
   //   // this.listData = new MatTableDataSource<songData>(this.music);
   //   // this.listData.sort = this.sort;
@@ -52,7 +53,7 @@ export class DashboardComponent implements OnInit {
     });
   }
   player(obj: songData){
-    this.play.player(obj);
+    this.dt.dataSub.next(obj);
   }
 
   open(obj: songData) {

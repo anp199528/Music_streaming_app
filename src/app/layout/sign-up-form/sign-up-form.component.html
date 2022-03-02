@@ -1,0 +1,48 @@
+<div class="modal-header">
+    <h4 class="modal-title">Login</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="card" style="width: 18rem rounded shadow py-3">
+
+        <div class="card-body">
+            <div class="container">
+                <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+                    <div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="text" class="form-control" id="Email" placeholder="Enter Email"
+                                name="email" width="20%" formControlName="email">
+                            <small class="text-danger"
+                                *ngIf="formControls.email.errors?.required && formControls.email.touched">Please
+                                enter email</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Password" class="form-label">Password*</label>
+                            <input type="text" class="form-control" id="Password" placeholder="Enter Password"
+                                name="password" width="20%" formControlName="password">
+                            <small class="text-danger"
+                                *ngIf="formControls.password.errors?.required && formControls.password.touched">Please
+                                enter password</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Mobile" class="form-label">Mobile No.*</label>
+                            <input type="text" class="form-control" id="Mobile" placeholder="Enter Mobile No"
+                                name="mobile" width="20%" formControlName="mobile">
+                            <small class="text-danger"
+                                *ngIf="formControls.mobile.errors?.required && formControls.mobile.touched">Please
+                                enter Mobile no.</small>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success" [disabled]="myReactiveForm.invalid">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>

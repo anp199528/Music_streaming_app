@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { DataCarrierService } from 'src/app/services/data-carrier.service';
 import { TrendingapiService } from 'src/app/services/trendingapi.service';
 import { songData } from 'src/app/shared/datasets';
 
@@ -8,8 +9,8 @@ import { songData } from 'src/app/shared/datasets';
   styleUrls: ['./trending.component.css']
 })
 export class TrendingComponent implements OnInit {
-  @Output() messageEvent = new EventEmitter<songData>();
-  constructor(public api : TrendingapiService) { }
+  
+  constructor(public api : TrendingapiService, public dt : DataCarrierService) { }
 public music!: songData[];
   ngOnInit(): void {
     this.api.apiCall().subscribe((data)=>{
@@ -17,6 +18,6 @@ public music!: songData[];
     });
   }
   public player(obj:songData){
-    this.messageEvent.emit(obj);
+  this.dt.dataSub.next(obj);
   }
 }

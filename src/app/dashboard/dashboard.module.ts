@@ -16,14 +16,14 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { PlayerComponent } from './player/player.component';
+import { PlayerComponent } from '../layout/player/player.component';
 import { TrendingComponent } from './trending/trending.component';
 import { NewReleaseComponent } from './new-release/new-release.component';
 import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     DashboardComponent,
-    PlayerComponent,
+    // PlayerComponent,
     TrendingComponent,
     NewReleaseComponent
   ],

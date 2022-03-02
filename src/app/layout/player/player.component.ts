@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import { Observable } from 'rxjs';
+import { DataCarrierService } from 'src/app/services/data-carrier.service';
 import { songData } from 'src/app/shared/datasets';
 
 @Component({
@@ -8,7 +9,7 @@ import { songData } from 'src/app/shared/datasets';
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.css']
 })
-export class PlayerComponent implements OnInit {
+export class PlayerComponent implements OnInit,AfterViewInit,OnDestroy {
   public audioEvents = [
     "ended",
     "error",
@@ -27,16 +28,32 @@ export class PlayerComponent implements OnInit {
   public seek=0;
   public flag=true;
   public audioobj=new Audio();
-  constructor() { }
+  public obj!:songData;
+  constructor(public dt:DataCarrierService) { }
+  ngOnDestroy(): void {
+    this.stop();
+    // this.unload();
+  }
+  ngAfterViewInit(): void { 
+    this.dt.dataSub.subscribe((obj)=>
+    {this.obj=obj
+      console.log(this.obj);
+      this.audioobj.src = this.obj.songs_url;
+      this.audioobj.load();
+      this.streamObservable(this.obj.songs_url).subscribe(event=>{});
+     
+    this.flag=false;
+    });
+  }
 
   ngOnInit(): void {
+   
   }
 
   public streamObservable(url:string) {
     return new Observable(observer=> {
       // Play audio
-      this.audioobj.src = url;
-      this.audioobj.load();
+     
       this.audioobj.play();
       
       const handler = (event: Event)=> {
@@ -75,13 +92,12 @@ export class PlayerComponent implements OnInit {
     });
   }
 
-  public player(obj: songData){
+  public player(){
     // this.playData=obj;
     // this.flag=!this.flag;
     // console.log(obj,this.playData);
     // this.icon=obj.icon;
-    this.streamObservable(obj.songs_url).subscribe(event=>{});
-    this.flag=false;
+    
   }
 
   setSeekTo(event:any){
@@ -102,6 +118,10 @@ export class PlayerComponent implements OnInit {
     this.audioobj.pause();
     this.audioobj.currentTime=0;
   }
+  // unload(){
+  //   this.audioobj.src=""
+  //   this.audioobj.load();
+  // }
   // setVolume(ev:any){
   //   this.audioobj.volume=ev.target.value;
   //   // console.log(ev);
